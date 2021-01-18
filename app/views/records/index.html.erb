@@ -3,7 +3,7 @@
   <% @records.each do |r| %>
     <div class="card_body">
       <div class="card_Url">
-        <%= r.Url %>
+        <%= raw Rinku.auto_link(r.Url, :all, 'target="_blank"') %>
       </div>
       <div class="card_summary">
         <%= r.summary %>
